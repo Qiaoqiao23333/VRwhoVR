@@ -1,0 +1,57 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.main-content {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 20px;
+}
+
+.filters-text {
+  font-family: 'Georgia', serif;
+  color: #A62523;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.center-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+}
+
+.right-section {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .main-content {
+    flex-direction: column;
+  }
+  
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+  
+  .center-section {
+    min-height: 400px;
+  }
+}
+

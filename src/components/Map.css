@@ -1,0 +1,98 @@
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.river {
+  opacity: 0.7;
+}
+
+.green-area {
+  opacity: 0.6;
+}
+
+.clickable-green {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.clickable-green:hover {
+  opacity: 0.8;
+}
+
+.roads {
+  opacity: 0.5;
+}
+
+.building {
+  opacity: 0.8;
+}
+
+.people-group {
+  opacity: 0.7;
+}
+
+.pin-container {
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.pin-icon {
+  position: relative;
+  width: 24px;
+  height: 32px;
+}
+
+.pin-top {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 16px solid #A62523;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pin-circle {
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.pin-marker {
+  animation: appear 0.3s ease-in;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 100%) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 100%) scale(1);
+  }
+}
+
