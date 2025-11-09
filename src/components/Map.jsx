@@ -2,14 +2,14 @@ import React from 'react'
 import './Map.css'
 
 function Map({ selectedAttraction }) {
-  // 固定位置：地图左下角区域（绿色区域附近）
+  // Fixed position: bottom-left area of the map (near green area)
   const pinPosition = {
     left: '15%',
     bottom: '20%'
   }
 
   const handleGreenAreaClick = () => {
-    // 这个按钮用于未来的 chatbot 集成
+    // This button is for future chatbot integration
     console.log('Green area clicked - chatbot will be integrated here')
   }
 
@@ -21,7 +21,7 @@ function Map({ selectedAttraction }) {
         className="map-image"
       />
       
-      {/* 右上角绿色区域的可点击层（用于未来集成 chatbot） */}
+      {/* Clickable layer for top-right green area (for future chatbot integration) */}
       <div 
         className="clickable-green-area"
         onClick={handleGreenAreaClick}
@@ -36,7 +36,7 @@ function Map({ selectedAttraction }) {
         }}
       />
       
-      {/* 图钉图标 - 当选中景点时显示在固定位置 */}
+      {/* Pin icon - displayed at fixed position when attraction is selected */}
       {selectedAttraction && (
         <div 
           className="pin-container"

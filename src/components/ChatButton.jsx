@@ -4,7 +4,7 @@ import './ChatButton.css'
 function ChatButton() {
   const handleClick = () => {
     console.log('Chat with Kartie clicked')
-    // 未来会集成 chatbot
+    // Chatbot will be integrated in the future
   }
 
   return (

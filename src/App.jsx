@@ -14,7 +14,7 @@ function App() {
   const handleAttractionClick = (attraction) => {
     setSelectedAttraction(attraction)
     
-    // 如果点击的是 Mozarts Wohnhaus，显示 AR 模型
+    // If "Mozarts Wohnhaus" is clicked, show AR model
     if (attraction === 'Mozarts Wohnhaus') {
       setShowARModel(true)
     }

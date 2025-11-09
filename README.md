@@ -1,63 +1,73 @@
 # Salzburg Card - React Project
 
-Salzburg Card 网页应用，展示萨尔茨堡景点地图和列表。
+A web application for Salzburg Card, displaying a map and list of attractions in Salzburg.
 
-## 功能特性
+## Features
 
-- ✅ 响应式布局，包含顶部品牌区域、地图和右侧景点列表
-- ✅ 可点击的景点列表（右侧每一行都可以点击）
-- ✅ 点击景点后在地图固定位置显示图钉图标
-- ✅ 地图右上角绿色区域为按钮（用于未来集成 chatbot）
-- ✅ "Chat with Kartie" 按钮（左下角）
-- ✅ "Get the Kartie App" 按钮（右下角）
+- ✅ Responsive layout with header brand area, map, and attraction list on the right
+- ✅ Clickable attraction list (each row on the right is clickable)
+- ✅ Pin icon appears at a fixed location on the map when an attraction is clicked
+- ✅ Green area in the top-right corner of the map is a button (for future chatbot integration)
+- ✅ "Chat with Kartie" button (bottom-left)
+- ✅ "Get the Kartie App" button (bottom-right)
+- ✅ AR model viewer for "Mozarts Wohnhaus" attraction
+- ✅ Selected attraction highlights in red
 
-## 安装和运行
+## Installation and Running
 
-1. 安装依赖：
+1. Install dependencies:
 ```bash
 npm install
 ```
 
-2. 启动开发服务器：
+2. Start development server:
 ```bash
 npm run dev
 ```
 
-3. 构建生产版本：
+3. Build for production:
 ```bash
 npm run build
 ```
 
-4. 预览生产版本：
+4. Preview production build:
 ```bash
 npm run preview
 ```
 
-## 项目结构
+## Project Structure
 
 ```
 ├── src/
 │   ├── components/
-│   │   ├── Header.jsx          # 顶部品牌区域
-│   │   ├── Map.jsx              # 地图组件
-│   │   ├── AttractionList.jsx   # 景点列表
-│   │   ├── ChatButton.jsx       # Chat with Kartie 按钮
-│   │   └── AppButton.jsx        # Get the Kartie App 按钮
-│   ├── App.jsx                  # 主应用组件
-│   ├── main.jsx                 # 入口文件
-│   └── index.css                # 全局样式
+│   │   ├── Header.jsx          # Header brand area
+│   │   ├── Map.jsx              # Map component
+│   │   ├── AttractionList.jsx   # Attraction list
+│   │   ├── ChatButton.jsx       # Chat with Kartie button
+│   │   ├── AppButton.jsx        # Get the Kartie App button
+│   │   └── ARModelViewer.jsx    # AR model viewer component
+│   ├── App.jsx                  # Main application component
+│   ├── main.jsx                 # Entry point
+│   └── index.css                # Global styles
+├── public/
+│   ├── header-banner.png        # Header banner image
+│   ├── map.png                  # Map image
+│   ├── logo.png                 # Logo image
+│   ├── pin.png                  # Pin icon
+│   └── WavingMozart.usdz        # AR model file
 ├── index.html
 ├── package.json
 └── vite.config.js
 ```
 
-## 技术栈
+## Tech Stack
 
 - React 18
 - Vite
 - CSS3
+- Model Viewer (for AR functionality)
 
-## 未来计划
+## Future Plans
 
-- 集成 chatbot 到地图右上角绿色区域
-- 集成 chatbot 到 "Chat with Kartie" 按钮
+- Integrate chatbot into the green area in the top-right corner of the map
+- Integrate chatbot into the "Chat with Kartie" button

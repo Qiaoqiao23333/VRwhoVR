@@ -5,7 +5,7 @@ function ARModelViewer({ isOpen, onClose }) {
   if (!isOpen) return null
 
   const handleOverlayClick = (e) => {
-    // 如果点击的是遮罩层（不是模型本身），则关闭
+    // If overlay (not the model itself) is clicked, close the viewer
     if (e.target.classList.contains('ar-overlay')) {
       onClose()
     }
