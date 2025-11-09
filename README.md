@@ -5,7 +5,7 @@
 > “Your Salzburg experience starts before you arrive.”
 
 ---
-
+![KARTI Cover](./public/Project_Image.webp)
 ## 🏰 About the Project
 ![KARTI Demo](./public/KartiWave.gif)
 
@@ -131,5 +131,5 @@ npm run preview
 
 ## our team
 us: 
-https://github.com/Qiaoqiao23333/VRwhoVR/blob/main/public/us.mov
+https://github.com/Qiaoqiao23333/VRwhoVR/blob/main/public/us.mp4
 
