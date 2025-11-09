@@ -1,4 +1,4 @@
-# Salzburg Card - React Project
+# Salzburg Card - Salzburg tourism hackathon
 
 A web application for Salzburg Card, displaying a map and list of attractions in Salzburg.
 
