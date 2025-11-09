@@ -7,6 +7,8 @@
 ---
 
 ## 🏰 About the Project
+![KARTI Demo](./public/KartiWave.gif)
+
 
 **KARTI** is a digital tourism companion designed to enhance the *Salzburg Card* experience **before** travelers even arrive in the city.
 
@@ -126,3 +128,7 @@ npm run preview
 
 - Integrate chatbot into the green area in the top-right corner of the map
 - Integrate chatbot into the "Chat with Kartie" button
+
+## our team
+https://github.com/Qiaoqiao23333/VRwhoVR/blob/main/public/us.mp4
+
