@@ -89,14 +89,6 @@ It personalizes tourism, promotes sustainable engagement, and strengthens Salzbu
 
 ---
 
-## 👥 Team
-
-**VRwhoVR**  
-_A collective of artists, designers, and interactive storytellers._  
-Combining creativity, code, and culture to re-imagine digital tourism.
-
----
-
 ## 📍 Project Structure
 
 
@@ -129,6 +121,11 @@ npm run preview
 - Integrate VR of DOM Salzburg in web (because of the bad weather, we dont have chance this time :/sad)
 
 ## our team
+
+## 👥 Team -- VRwhoVR
+_A collective of artists, designers, and interactive storytellers._  
+Combining creativity, code, and culture to re-imagine digital tourism.
+
 us: 
 https://github.com/Qiaoqiao23333/VRwhoVR/blob/main/public/us.mp4
 
