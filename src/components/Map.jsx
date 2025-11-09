@@ -49,10 +49,11 @@ function Map({ selectedAttraction }) {
             zIndex: 10
           }}
         >
-          <div className="pin-icon">
-            <div className="pin-top"></div>
-            <div className="pin-circle"></div>
-          </div>
+          <img 
+            src="/pin.png" 
+            alt="Pin" 
+            className="pin-image"
+          />
         </div>
       )}
     </div>
