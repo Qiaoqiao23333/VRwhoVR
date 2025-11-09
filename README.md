@@ -130,5 +130,6 @@ npm run preview
 - Integrate chatbot into the "Chat with Kartie" button
 
 ## our team
-https://github.com/Qiaoqiao23333/VRwhoVR/blob/main/public/us.mp4
+us: 
+https://github.com/Qiaoqiao23333/VRwhoVR/blob/main/public/us.mov
 
