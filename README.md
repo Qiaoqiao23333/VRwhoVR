@@ -126,8 +126,7 @@ npm run preview
 
 ## Future Plans
 
-- Integrate chatbot into the green area in the top-right corner of the map
-- Integrate chatbot into the "Chat with Kartie" button
+- Integrate VR of DOM Salzburg in web (because of the bad weather, we dont have chance this time :/sad)
 
 ## our team
 us: 
