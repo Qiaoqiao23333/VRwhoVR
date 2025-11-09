@@ -30,6 +30,11 @@
   background-color: #e8e8e8;
 }
 
+.attraction-item-selected {
+  background-color: #A62523 !important;
+  color: white !important;
+}
+
 .attraction-divider {
   height: 1px;
   background-color: #A62523;

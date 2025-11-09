@@ -5,12 +5,23 @@ import Map from './components/Map'
 import AttractionList from './components/AttractionList'
 import ChatButton from './components/ChatButton'
 import AppButton from './components/AppButton'
+import ARModelViewer from './components/ARModelViewer'
 
 function App() {
   const [selectedAttraction, setSelectedAttraction] = useState(null)
+  const [showARModel, setShowARModel] = useState(false)
 
   const handleAttractionClick = (attraction) => {
     setSelectedAttraction(attraction)
+    
+    // 如果点击的是 Mozarts Wohnhaus，显示 AR 模型
+    if (attraction === 'Mozarts Wohnhaus') {
+      setShowARModel(true)
+    }
+  }
+
+  const handleCloseARModel = () => {
+    setShowARModel(false)
   }
 
   return (
@@ -25,10 +36,14 @@ function App() {
           <Map selectedAttraction={selectedAttraction} />
         </div>
         <div className="right-section">
-          <AttractionList onAttractionClick={handleAttractionClick} />
+          <AttractionList 
+            onAttractionClick={handleAttractionClick}
+            selectedAttraction={selectedAttraction}
+          />
           <AppButton />
         </div>
       </div>
+      <ARModelViewer isOpen={showARModel} onClose={handleCloseARModel} />
     </div>
   )
 }

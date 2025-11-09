@@ -24,20 +24,23 @@ const attractions = [
   'Zoo Salzburg Hellbrunn'
 ]
 
-function AttractionList({ onAttractionClick }) {
+function AttractionList({ onAttractionClick, selectedAttraction }) {
   return (
     <div className="attraction-list">
-      {attractions.map((attraction, index) => (
-        <div key={index} className="attraction-item-container">
-          <div 
-            className="attraction-item"
-            onClick={() => onAttractionClick(attraction)}
-          >
-            {attraction}
+      {attractions.map((attraction, index) => {
+        const isSelected = selectedAttraction === attraction
+        return (
+          <div key={index} className="attraction-item-container">
+            <div 
+              className={`attraction-item ${isSelected ? 'attraction-item-selected' : ''}`}
+              onClick={() => onAttractionClick(attraction)}
+            >
+              {attraction}
+            </div>
+            {index < attractions.length - 1 && <div className="attraction-divider"></div>}
           </div>
-          {index < attractions.length - 1 && <div className="attraction-divider"></div>}
-        </div>
-      ))}
+        )
+      })}
     </div>
   )
 }
