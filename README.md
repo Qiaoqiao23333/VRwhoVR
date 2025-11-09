@@ -1,5 +1,5 @@
 # Salzburg Card - Salzburg tourism hackathon
-# 🪄 KARTI – Pre-Arrival Card Experience  
+# ![KARTI Cover](./public/logo.png) KARTI – Pre-Arrival Card Experience  
 **Hackathon: Salzburg Tourism Challenge #3**
 
 > “Your Salzburg experience starts before you arrive.”
